@@ -8,6 +8,7 @@ int main(int argc, const char *argv[]) {
         game.handleEvents();
         game.update();
         game.render();
+        std::cout << "Running\n";
     }
 
     game.clean();
