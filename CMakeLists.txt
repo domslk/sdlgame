@@ -24,7 +24,10 @@ set(
 )
 
 
-add_executable(Game src/main.cpp)
+add_executable(Game 
+  src/main.cpp
+  src/Game.cpp
+)
 
 
 target_include_directories(Game PRIVATE ${SDL2_INCLUDE_DIRS})

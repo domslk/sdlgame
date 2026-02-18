@@ -1,5 +1,5 @@
-CMakeFiles/Game.dir/src/main.cpp.o: \
-  /Users/domenslak/Desktop/all/personal/projects/games/game/src/main.cpp \
+CMakeFiles/Game.dir/src/Game.cpp.o: \
+  /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.cpp \
   /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.hpp \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL.h \
   /opt/homebrew/Cellar/sdl2/2.32.10/include/SDL2/SDL_main.h \
