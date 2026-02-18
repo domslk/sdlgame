@@ -11,14 +11,14 @@ Game::~Game() {
 
 void Game::init(const char *title, int xpos, int ypos, int width, int height) {
 
-    if (SDL_Init(SDL_INIT_VIDEO) == 1) {
+    if (SDL_Init(SDL_INIT_VIDEO)) {
         window = SDL_CreateWindow(title, width, height, 0);
         if (!window) {
             std::cout << "Problem initializing window!\n";
             return;
         }
 
-        renderer = SDL_CreateRenderer(window, title);
+        renderer = SDL_CreateRenderer(window, NULL);
 
         if (!renderer) {
             std::cout << "Problem initializing renderer!\n";
@@ -34,6 +34,7 @@ void Game::init(const char *title, int xpos, int ypos, int width, int height) {
 
 void Game::handleEvents() {
     SDL_Event event;
+
     SDL_PollEvent(&event);
     switch (event.type) {
         case SDL_EVENT_QUIT: 
@@ -43,6 +44,8 @@ void Game::handleEvents() {
         default:
             break;
     }
+
+    
 }
 
 void Game::update() {
