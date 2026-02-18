@@ -51,7 +51,7 @@ void Game::update() {
 
 void Game::render() {
     
-    SDL_SetRenderDrawColorFloat(renderer, 255, 0, 0, 255);
+    SDL_SetRenderDrawColorFloat(renderer, 1, 0, 0, 1);
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
 
