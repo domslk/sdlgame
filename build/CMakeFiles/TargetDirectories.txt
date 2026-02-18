@@ -1,0 +1,3 @@
+/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/Game.dir
+/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/edit_cache.dir
+/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/rebuild_cache.dir
