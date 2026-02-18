@@ -10,19 +10,26 @@ Game::~Game() {
 }
 
 void Game::init(const char *title, int xpos, int ypos, int width, int height) {
-    window = SDL_CreateWindow(title, width, height, 0);
-    if (!window) {
-        std::cout << "Problem initializing window!\n";
-        return;
-    }
 
-    renderer = SDL_CreateRenderer(window, title);
+    if (SDL_Init(SDL_INIT_VIDEO) == 1) {
+        window = SDL_CreateWindow(title, width, height, 0);
+        if (!window) {
+            std::cout << "Problem initializing window!\n";
+            return;
+        }
 
-    if (!renderer) {
-        std::cout << "Problem initializing renderer!\n";
-        return;
+        renderer = SDL_CreateRenderer(window, title);
+
+        if (!renderer) {
+            std::cout << "Problem initializing renderer!\n";
+            return;
+        }
+        isRunning = true;
+    } else {
+        std::cout << "fruick";
+        isRunning = false;
     }
-    isRunning = true;
+    
 }
 
 void Game::handleEvents() {
@@ -44,7 +51,7 @@ void Game::update() {
 
 void Game::render() {
     
-    SDL_SetRenderDrawColorFloat(renderer, 1, 0, 0, 255);
+    SDL_SetRenderDrawColorFloat(renderer, 255, 0, 0, 255);
     SDL_RenderClear(renderer);
     SDL_RenderPresent(renderer);
 
