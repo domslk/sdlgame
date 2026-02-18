@@ -111,10 +111,8 @@ Game_EXTERNAL_OBJECTS =
 Game: CMakeFiles/Game.dir/src/main.cpp.o
 Game: CMakeFiles/Game.dir/src/Game.cpp.o
 Game: CMakeFiles/Game.dir/build.make
-Game: /opt/homebrew/Cellar/sdl2/2.32.10/lib/libSDL2.dylib
-Game: /opt/homebrew/Cellar/sdl2_image/2.8.8/lib/libSDL2_image.dylib
-Game: /opt/homebrew/Cellar/sdl2_ttf/2.24.0/lib/libSDL2_ttf.dylib
-Game: /opt/homebrew/Cellar/sdl2_mixer/2.8.1_1/lib/libSDL2_mixer.dylib
+Game: libSDL3.0.dylib
+Game: /Users/domenslak/Desktop/all/personal/projects/games/game/vendored/SDL/src/dynapi/SDL_dynapi.sym
 Game: CMakeFiles/Game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
