@@ -1,8 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/domenslak/Desktop/all/personal/projects/games/game/build/cmake_install.cmake",
-		"/Users/domenslak/Desktop/all/personal/projects/games/game/build/vendored/SDL/cmake_install.cmake"
+		"/Users/domenslak/game/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

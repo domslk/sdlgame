@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/domenslak/Desktop/all/personal/projects/games/game
+CMAKE_SOURCE_DIR = /Users/domenslak/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/domenslak/Desktop/all/personal/projects/games/game/build
+CMAKE_BINARY_DIR = /Users/domenslak/game/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Game.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/Game.dir/codegen:
 .PHONY : CMakeFiles/Game.dir/codegen
 
 CMakeFiles/Game.dir/src/main.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/main.cpp.o: /Users/domenslak/Desktop/all/personal/projects/games/game/src/main.cpp
+CMakeFiles/Game.dir/src/main.cpp.o: /Users/domenslak/game/src/main.cpp
 CMakeFiles/Game.dir/src/main.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/main.cpp.o -MF CMakeFiles/Game.dir/src/main.cpp.o.d -o CMakeFiles/Game.dir/src/main.cpp.o -c /Users/domenslak/Desktop/all/personal/projects/games/game/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/domenslak/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Game.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/main.cpp.o -MF CMakeFiles/Game.dir/src/main.cpp.o.d -o CMakeFiles/Game.dir/src/main.cpp.o -c /Users/domenslak/game/src/main.cpp
 
 CMakeFiles/Game.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/domenslak/Desktop/all/personal/projects/games/game/src/main.cpp > CMakeFiles/Game.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/domenslak/game/src/main.cpp > CMakeFiles/Game.dir/src/main.cpp.i
 
 CMakeFiles/Game.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/domenslak/Desktop/all/personal/projects/games/game/src/main.cpp -o CMakeFiles/Game.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/domenslak/game/src/main.cpp -o CMakeFiles/Game.dir/src/main.cpp.s
 
 CMakeFiles/Game.dir/src/Game.cpp.o: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/Game.cpp.o: /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.cpp
+CMakeFiles/Game.dir/src/Game.cpp.o: /Users/domenslak/game/src/Game.cpp
 CMakeFiles/Game.dir/src/Game.cpp.o: CMakeFiles/Game.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/src/Game.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/Game.cpp.o -MF CMakeFiles/Game.dir/src/Game.cpp.o.d -o CMakeFiles/Game.dir/src/Game.cpp.o -c /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/domenslak/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/src/Game.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Game.dir/src/Game.cpp.o -MF CMakeFiles/Game.dir/src/Game.cpp.o.d -o CMakeFiles/Game.dir/src/Game.cpp.o -c /Users/domenslak/game/src/Game.cpp
 
 CMakeFiles/Game.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.cpp > CMakeFiles/Game.dir/src/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/domenslak/game/src/Game.cpp > CMakeFiles/Game.dir/src/Game.cpp.i
 
 CMakeFiles/Game.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/domenslak/Desktop/all/personal/projects/games/game/src/Game.cpp -o CMakeFiles/Game.dir/src/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/domenslak/game/src/Game.cpp -o CMakeFiles/Game.dir/src/Game.cpp.s
 
 # Object files for target Game
 Game_OBJECTS = \
@@ -111,10 +111,10 @@ Game_EXTERNAL_OBJECTS =
 Game: CMakeFiles/Game.dir/src/main.cpp.o
 Game: CMakeFiles/Game.dir/src/Game.cpp.o
 Game: CMakeFiles/Game.dir/build.make
-Game: libSDL3.0.dylib
-Game: /Users/domenslak/Desktop/all/personal/projects/games/game/vendored/SDL/src/dynapi/SDL_dynapi.sym
+Game: /opt/homebrew/lib/libSDL3_image.0.4.0.dylib
+Game: /opt/homebrew/lib/libSDL3.0.dylib
 Game: CMakeFiles/Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/domenslak/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles/Game.dir/clean:
 .PHONY : CMakeFiles/Game.dir/clean
 
 CMakeFiles/Game.dir/depend:
-	cd /Users/domenslak/Desktop/all/personal/projects/games/game/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/domenslak/Desktop/all/personal/projects/games/game /Users/domenslak/Desktop/all/personal/projects/games/game /Users/domenslak/Desktop/all/personal/projects/games/game/build /Users/domenslak/Desktop/all/personal/projects/games/game/build /Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/Game.dir/DependInfo.cmake "--color=$(COLOR)" Game
+	cd /Users/domenslak/game/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/domenslak/game /Users/domenslak/game /Users/domenslak/game/build /Users/domenslak/game/build /Users/domenslak/game/build/CMakeFiles/Game.dir/DependInfo.cmake "--color=$(COLOR)" Game
 .PHONY : CMakeFiles/Game.dir/depend
 

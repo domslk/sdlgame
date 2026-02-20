@@ -7,21 +7,16 @@ project(
 )
 
 
-#set(CMAKE_CXX_STANDARD 20)
-#find_package(SDL2 REQUIRED)
-#find_package(SDL2_image REQUIRED)
-#find_package(SDL2_ttf REQUIRED)
-#find_package(SDL2_mixer REQUIRED)
+
+#set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
+#set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
 
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/$<CONFIGURATION>")
-
-
-add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
+#add_subdirectory(vendored/SDL EXCLUDE_FROM_ALL)
 
 
 find_package(SDL3 REQUIRED)
+find_package(SDL3_image REQUIRED)
 
 add_executable(Game 
   src/main.cpp
@@ -43,4 +38,7 @@ elseif(UNIX)
 endif()
 
 
-target_link_libraries(Game PRIVATE SDL3::SDL3)
+target_link_libraries(
+  Game PRIVATE SDL3::SDL3
+  SDL3_image::SDL3_image
+)

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/domenslak/Desktop/all/personal/projects/games/game/build/vendored/SDL/include-revision -I/Users/domenslak/Desktop/all/personal/projects/games/game/vendored/SDL/include
+CXX_INCLUDES = -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 =  -arch arm64
 

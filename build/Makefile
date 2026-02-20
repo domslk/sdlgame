@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/domenslak/Desktop/all/personal/projects/games/game
+CMAKE_SOURCE_DIR = /Users/domenslak/game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/domenslak/Desktop/all/personal/projects/games/game/build
+CMAKE_BINARY_DIR = /Users/domenslak/game/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles /Users/domenslak/Desktop/all/personal/projects/games/game/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/domenslak/game/build/CMakeFiles /Users/domenslak/game/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/domenslak/game/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -113,7 +113,6 @@ preinstall/fast:
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -P /Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
@@ -129,45 +128,6 @@ Game: cmake_check_build_system
 Game/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Game.dir/build.make CMakeFiles/Game.dir/build
 .PHONY : Game/fast
-
-#=============================================================================
-# Target rules for targets named SDL3-shared
-
-# Build rule for target.
-SDL3-shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL3-shared
-.PHONY : SDL3-shared
-
-# fast build rule for target.
-SDL3-shared/fast:
-	$(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3-shared.dir/build.make vendored/SDL/CMakeFiles/SDL3-shared.dir/build
-.PHONY : SDL3-shared/fast
-
-#=============================================================================
-# Target rules for targets named SDL3_test
-
-# Build rule for target.
-SDL3_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL3_test
-.PHONY : SDL3_test
-
-# fast build rule for target.
-SDL3_test/fast:
-	$(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL3_test.dir/build.make vendored/SDL/CMakeFiles/SDL3_test.dir/build
-.PHONY : SDL3_test/fast
-
-#=============================================================================
-# Target rules for targets named SDL_uclibc
-
-# Build rule for target.
-SDL_uclibc: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SDL_uclibc
-.PHONY : SDL_uclibc
-
-# fast build rule for target.
-SDL_uclibc/fast:
-	$(MAKE) $(MAKESILENT) -f vendored/SDL/CMakeFiles/SDL_uclibc.dir/build.make vendored/SDL/CMakeFiles/SDL_uclibc.dir/build
-.PHONY : SDL_uclibc/fast
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
@@ -226,9 +186,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Game"
-	@echo "... SDL3-shared"
-	@echo "... SDL3_test"
-	@echo "... SDL_uclibc"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
@@ -246,7 +203,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -P /Users/domenslak/Desktop/all/personal/projects/games/game/build/CMakeFiles/VerifyGlobs.cmake
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

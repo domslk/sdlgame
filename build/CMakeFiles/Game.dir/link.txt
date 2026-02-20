@@ -1,1 +1,1 @@
-/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Game.dir/src/main.cpp.o CMakeFiles/Game.dir/src/Game.cpp.o -o Game  -Wl,-rpath,@executable_path -Wl,-rpath,@loader_path libSDL3.0.dylib
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Game.dir/src/main.cpp.o CMakeFiles/Game.dir/src/Game.cpp.o -o Game  -Wl,-rpath,@executable_path -Wl,-rpath,@loader_path /opt/homebrew/lib/libSDL3_image.0.4.0.dylib /opt/homebrew/lib/libSDL3.0.dylib
