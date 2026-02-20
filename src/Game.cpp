@@ -70,10 +70,11 @@ void Game::update() {
 
     float speed = 300.0f;
 
-    if (state[SDL_SCANCODE_W]) playerDest.y -= speed * deltaTime;
-    if (state[SDL_SCANCODE_S]) playerDest.y += speed * deltaTime;
-    if (state[SDL_SCANCODE_A]) playerDest.x -= speed * deltaTime;
-    if (state[SDL_SCANCODE_D]) playerDest.x += speed * deltaTime;
+    if (playerDest.y > 0) if (state[SDL_SCANCODE_W]) playerDest.y -= speed * deltaTime;
+    if (playerDest.y < 694) if (state[SDL_SCANCODE_S]) playerDest.y += speed * deltaTime;
+    if (playerDest.x > 0) if (state[SDL_SCANCODE_A]) playerDest.x -= speed * deltaTime;
+    if (playerDest.x < 1254) if (state[SDL_SCANCODE_D]) playerDest.x += speed * deltaTime;
+    
 }
 
 void Game::render() {
