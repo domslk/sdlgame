@@ -9,11 +9,35 @@
 class Game {
     int count = 0;
     bool isRunning;
+
+    /* WINDOW */
     SDL_Window *window;
     SDL_Renderer *renderer;
 
-    SDL_Texture *playerTexture;
+
+    /* PLAYER */
+    SDL_Texture* playerUp;
+    SDL_Texture* playerDown;
+    SDL_Texture* playerLeft;
+    SDL_Texture* playerRight;
+
+    SDL_Texture* playerBoatUp;
+    SDL_Texture* playerBoatDown;
+    SDL_Texture* playerBoatLeft;
+    SDL_Texture* playerBoatRight;
+
+    SDL_Texture* currentPlayerTexture;
     SDL_FRect playerDest;
+
+    bool isOnIsland;
+
+
+    /* GAME */
+    SDL_Texture *backgroundTexture;
+
+    SDL_Texture *islandTexture;
+    SDL_Surface *islandSurface;
+    SDL_FRect islandDest;
 
     uint64_t lastTime;
     float deltaTime;        
